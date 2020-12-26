@@ -1,0 +1,145 @@
+<form [formGroup]="form" class="form-group" style="width: 100%">
+  <div class="row criteria-header">
+    <div class="col-12">Od do</div>
+  </div>
+  <div class="row criteria-section">
+    <div class="col-4">
+      <label>
+        <input type="text" formControlName="dateFrom" class="form-control" />
+      </label>
+    </div>
+    <div class="col-4">
+      <label>
+        <input type="text" formControlName="dateTo" class="form-control" />
+      </label>
+    </div>
+    <div class="col-4"></div>
+  </div>
+  <div class="row criteria-header">
+    <div class="col-12">Lokalizacja</div>
+  </div>
+  <div class="row criteria-section">
+    <div class="col-4">
+      <div class="criteria-resort">
+        <app-tile-selectable
+          [background]="resortsMap.get(Resort.POBIEROWO).background"
+          [control]="form.get('resorts').get(Resort.POBIEROWO.toString())"
+          [controlName]="Resort.POBIEROWO.toString()"
+          [title]="Resort.POBIEROWO | resort"
+        ></app-tile-selectable>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="criteria-resort">
+        <app-tile-selectable
+          [background]="resortsMap.get(Resort.ROWY).background"
+          [control]="form.get('resorts').get(Resort.ROWY.toString())"
+          [controlName]="Resort.ROWY.toString()"
+          [title]="Resort.ROWY | resort"
+        ></app-tile-selectable>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="criteria-resort">
+        <app-tile-selectable
+          [background]="resortsMap.get(Resort.KOLOBRZEG).background"
+          [control]="form.get('resorts').get(Resort.KOLOBRZEG.toString())"
+          [controlName]="Resort.KOLOBRZEG.toString()"
+          [title]="Resort.KOLOBRZEG | resort"
+        ></app-tile-selectable>
+      </div>
+    </div>
+  </div>
+  <div class="row criteria-section">
+    <div class="col-4">
+      <div class="criteria-resort">
+        <app-tile-selectable
+          [background]="resortsMap.get(Resort.NIECHORZE).background"
+          [control]="form.get('resorts').get(Resort.NIECHORZE.toString())"
+          [controlName]="Resort.NIECHORZE.toString()"
+          [title]="Resort.NIECHORZE | resort"
+        ></app-tile-selectable>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="criteria-resort">
+        <app-tile-selectable
+          [background]="resortsMap.get(Resort.USTRONIE_MORSKIE).background"
+          [control]="
+            form.get('resorts').get(Resort.USTRONIE_MORSKIE.toString())
+          "
+          [controlName]="Resort.USTRONIE_MORSKIE.toString()"
+          [title]="Resort.USTRONIE_MORSKIE | resort"
+        ></app-tile-selectable>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="criteria-resort">
+        <app-tile-selectable
+          [background]="resortsMap.get(Resort.MIELNO).background"
+          [control]="form.get('resorts').get(Resort.MIELNO.toString())"
+          [controlName]="Resort.MIELNO.toString()"
+          [title]="Resort.MIELNO | resort"
+        ></app-tile-selectable>
+      </div>
+    </div>
+  </div>
+  <div class="row criteria-header">
+    <div class="col-12">Rodzaj zakwaterowania</div>
+  </div>
+  <div class="row criteria-section">
+    <div class="col-4">
+      <div class="criteria-resort">
+        <app-tile-selectable
+          [background]="
+            accommodationTypeMap.get(AccommodationType.HOUSE).background
+          "
+          [controlName]="AccommodationType.HOUSE.toString()"
+          [control]="
+            form
+              .get('accommodationTypes')
+              .get(AccommodationType.HOUSE.toString())
+          "
+          [title]="AccommodationType.HOUSE | accommodationType"
+        ></app-tile-selectable>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="criteria-resort">
+        <app-tile-selectable
+          [background]="
+            accommodationTypeMap.get(AccommodationType.APARTMENT_40).background
+          "
+          [controlName]="AccommodationType.APARTMENT_55.toString()"
+          [control]="
+            form
+              .get('accommodationTypes')
+              .get(AccommodationType.APARTMENT_40.toString())
+          "
+          [title]="AccommodationType.APARTMENT_40 | accommodationType"
+        ></app-tile-selectable>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="criteria-resort">
+        <app-tile-selectable
+          [background]="
+            accommodationTypeMap.get(AccommodationType.APARTMENT_55).background
+          "
+          [controlName]="AccommodationType.APARTMENT_55.toString()"
+          [control]="
+            form
+              .get('accommodationTypes')
+              .get(AccommodationType.APARTMENT_55.toString())
+          "
+          [title]="AccommodationType.APARTMENT_55 | accommodationType"
+        ></app-tile-selectable>
+      </div>
+    </div>
+  </div>
+  <div class="row criteria-header">
+    <div class="col-12">
+      <button (click)="clicked()" class="btn btn-primary">Pobierz dane</button>
+    </div>
+  </div>
+</form>

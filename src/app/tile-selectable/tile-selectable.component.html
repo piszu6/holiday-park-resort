@@ -1,0 +1,14 @@
+<div
+  class="tile-container"
+  [style]="background ? 'background-image: url(' + background + ')' : ''"
+>
+  <div
+    class="tile-title">
+    {{ title }}
+  </div>
+  <div
+    class="tile-overlay"
+    (click)="changeSelection()"
+    [ngClass]="{ 'tile-overlay--selected': control.value }"
+  ></div>
+</div>

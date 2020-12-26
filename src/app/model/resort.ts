@@ -1,0 +1,11 @@
+export enum Resort {
+  EMPTY,
+  POBIEROWO,
+  USTRONIE_MORSKIE,
+  EMPTY_2,
+  EMPTY_3,
+  NIECHORZE,
+  ROWY,
+  KOLOBRZEG,
+  MIELNO
+}

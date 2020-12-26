@@ -1,0 +1,8 @@
+<div
+  *ngFor="let availability of stayResort.availabilities"
+  class="cell"
+  [ngClass]="{ 'cell--ready': ready }"
+>
+  {{ availability.accommodationType | accommodationType }}:
+  {{ availability.number }}
+</div>

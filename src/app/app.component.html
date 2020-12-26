@@ -1,0 +1,11 @@
+<div class="container">
+
+  <div class="header">
+    <app-criteria (formEmitter)="rebuild($event)"></app-criteria>
+  </div>
+
+  <div class="result">
+    <app-results [stays]="stays" [resorts]="resorts"></app-results>
+  </div>
+
+</div>

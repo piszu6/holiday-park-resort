@@ -1,0 +1,8 @@
+.cell {
+  opacity: 0.1;
+}
+
+.cell--ready {
+  opacity: 1.0;
+  transition: opacity 1s;
+}
