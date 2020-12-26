@@ -15,8 +15,8 @@ export class CriteriaComponent implements OnInit {
 
   public readonly Resort = Resort;
   public readonly AccommodationType = AccommodationType;
-  public readonly resortsMap = new Map<Resort, object>();
-  public readonly accommodationTypeMap = new Map<AccommodationType, object>();
+  public readonly resortsMap = new Map<Resort, any>();
+  public readonly accommodationTypeMap = new Map<AccommodationType, any>();
 
   @Output() public formEmitter: EventEmitter<any> = new EventEmitter();
 
