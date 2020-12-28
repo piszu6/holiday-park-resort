@@ -1,10 +1,10 @@
 <div class="container">
 
-  <div class="header">
+  <div class="row header">
     <app-criteria (formEmitter)="rebuild($event)"></app-criteria>
   </div>
 
-  <div class="result">
+  <div class="row result">
     <app-results [stays]="stays" [resorts]="resorts"></app-results>
   </div>
 

@@ -1,8 +1,8 @@
 <form [formGroup]="form" class="form-group" style="width: 100%">
-  <div class="row criteria-header">
+  <div class="row no-gutters criteria-header">
     <div class="col-12">Od do</div>
   </div>
-  <div class="row criteria-section">
+  <div class="row no-gutters criteria-section">
     <div class="col-4">
       <label>
         <input type="text" formControlName="dateFrom" class="form-control" />
@@ -15,10 +15,10 @@
     </div>
     <div class="col-4"></div>
   </div>
-  <div class="row criteria-header">
+  <div class="row no-gutters criteria-header">
     <div class="col-12">Lokalizacja</div>
   </div>
-  <div class="row criteria-section">
+  <div class="row no-gutters criteria-section">
     <div class="col-4">
       <div class="criteria-resort">
         <app-tile-selectable
@@ -50,7 +50,7 @@
       </div>
     </div>
   </div>
-  <div class="row criteria-section">
+  <div class="row no-gutters criteria-section">
     <div class="col-4">
       <div class="criteria-resort">
         <app-tile-selectable
@@ -84,10 +84,10 @@
       </div>
     </div>
   </div>
-  <div class="row criteria-header">
+  <div class="row no-gutters criteria-header">
     <div class="col-12">Rodzaj zakwaterowania</div>
   </div>
-  <div class="row criteria-section">
+  <div class="row no-gutters criteria-section">
     <div class="col-4">
       <div class="criteria-resort">
         <app-tile-selectable
@@ -137,7 +137,7 @@
       </div>
     </div>
   </div>
-  <div class="row criteria-header">
+  <div class="row no-gutters criteria-header">
     <div class="col-12">
       <button (click)="clicked()" class="btn btn-primary">Pobierz dane</button>
     </div>
