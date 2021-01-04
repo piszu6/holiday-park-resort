@@ -9,9 +9,9 @@ form {
 
 .criteria-resort {
   box-sizing: border-box;
-  height: 169px;
   margin: 24px auto;
-  width: 300px;
+  padding: 16px;
+  position: relative;
 }
 
 .criteria-header {
